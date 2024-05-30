@@ -2,6 +2,17 @@
 <html>
 <head>
     <style>
+        /* CSS for the logo */
+        .logo-container {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo {
+            height: 50px; /* Adjust as needed */
+            margin-right: 20px;
+        }
+
         /* CSS for tabs */
         .tab-container {
             background-color: rgba(128, 0, 128, 0.49); /* Purple color with increased transparency */
@@ -14,7 +25,8 @@
 
         .tab {
             overflow: hidden;
-            width: 100%;
+            width: calc(100% - 100px); /* Adjusted width to make room for logo */
+            margin-left: 100px; /* Space for logo */
             box-sizing: border-box;
         }
 
@@ -102,8 +114,11 @@
 </head>
 <body style="background-color: #f0f0f0; margin: 0;">
 
-<!-- Purple box container for tabs -->
+<!-- Purple box container for tabs and logo -->
 <div class="tab-container">
+    <div class="logo-container">
+        <img src="your-logo-url.png" alt="Logo" class="logo"> <!-- Replace with your logo URL -->
+    </div>
     <div class="tab">
         <button class="tablinks active" onclick="openTab(event, 'Home')">Home</button>
         <button class="tablinks" onclick="openTab(event, 'Information')">Information</button>
