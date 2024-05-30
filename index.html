@@ -9,11 +9,11 @@
             margin-bottom: 20px;
             width: 100%;
             box-sizing: border-box;
+            border-radius: 0; /* No rounded corners for the top box */
         }
 
         .tab {
             overflow: hidden;
-            border-radius: 0;
             width: 100%;
             box-sizing: border-box;
         }
@@ -30,7 +30,7 @@
             color: white;
             font-size: 17px;
             margin-right: 5px;
-            border-radius: 0;
+            border-radius: 10px 10px 0 0; /* Rounded corners for the tabs */
         }
 
         /* Change background color of buttons on hover */
@@ -47,7 +47,7 @@
         .tabcontent {
             display: none;
             padding: 20px;
-            border-radius: 0;
+            border-radius: 0 10px 10px 10px; /* Rounded corners for the content */
             background-color: #f0f0f0;
             border: 2px solid purple; /* Added border for the purple box */
         }
